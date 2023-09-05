@@ -1,16 +1,27 @@
 @import 'base/variables';
 @import 'base/mixins';
-@import 'base/media';
 
 *{
     font-family: 'MuseoModerno', sans-serif;
 }
 
-.container{
-    width: 950px;
-    margin: 0 auto;
-}
+// .container{
+//     width: 950px;
+//     margin: 0 auto;
+// }
 
 @import 'blocks/promo';
 @import 'blocks/header';
-@import 'blocks/buttons'
+@import 'blocks/buttons';
+@import 'blocks/advanteges';
+
+.title{
+    color: #0D0D0D;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0;
+}
+
+@import 'base/media';
