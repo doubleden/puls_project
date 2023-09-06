@@ -1,0 +1,22 @@
+.consultation{
+    padding-top: 100px;
+    min-height: 590px;
+    background: url('../../img/bg/sec_bg.png') center (center/cover) no-repeat;
+    &__title{
+        margin: 0;
+        color: #FFF;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 54px; /* 150% */
+        text-transform: uppercase;
+    }
+    &__descrp{
+        margin-top: 8px;
+        color: #FFF;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 30px; /* 150% */
+    }
+}
