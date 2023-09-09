@@ -1,0 +1,11 @@
+@mixin slick-button-arrows {
+    position: absolute;
+    top: 255px;
+    border: none;
+    background-color: #fff;
+
+    img {
+        width: 31px;
+        height: 50px;
+    }
+};

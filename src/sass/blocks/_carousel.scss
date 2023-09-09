@@ -1,0 +1,21 @@
+.carousel{
+    padding: 108px 0;
+    &__inner{
+        width: 750px;
+        margin: 0 auto;
+        position: relative;
+        #slide2{
+            padding: 70px 0;
+        }
+    }
+    .slick-prev {
+        @include slick-button-arrows;
+        left: -66px;
+    }
+
+    .slick-next {
+        @include slick-button-arrows;
+        right: -66px;
+    }
+
+}
