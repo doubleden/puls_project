@@ -17,5 +17,31 @@
         @include slick-button-arrows;
         right: -66px;
     }
-
+    .slider-dots {
+        text-align: center;
+        margin-top: 5px;
+        .slick-dots{
+            margin-bottom: 0;
+            li{
+                display: inline-block;
+                margin: 0 5px;
+                button{
+                    width: 10px;
+                    height: 15px;
+                    border-radius: 50%;
+                    background-color: #666363;
+                    border: 2px solid #fff;
+                    outline: none;
+                    transition: background-color 0.3s ease;
+                    font-size: 0;
+                }
+            }
+        li.slick-active{
+            button{
+                background-color: rgb(0, 0, 0);
+                font-size: 0;
+                }
+            }
+        }
+      }
 }
