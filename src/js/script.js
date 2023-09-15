@@ -54,4 +54,35 @@ $(document).ready(function(){
         })
     })
 
+    // validation form
+    function validateForms(form){
+        $(form).validate({
+            rules:{
+                name:"required",
+                phone:"required",
+                email:{
+                    required: true,
+                    email: true,
+                    customEmailValidation: true
+                },
+            },
+            messages: {
+                name: "Введите свое имя",
+                phone: "Введите номер телефона",
+                email: {
+                  required: "Введите свою почту",
+                  email: "Неправильный адрес почты",
+                  customEmailValidation: "Неправильный адрес почты"
+                }
+              }
+        });
+        jQuery.validator.addMethod("customEmailValidation", function(value, element) {
+            return this.optional(element) || /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/.test(value);
+          }, "Неправильный адрес почты");
+    };
+
+    validateForms('#consultation-form');
+    validateForms('#consultation form');
+    validateForms('#buy form')
+
   });
