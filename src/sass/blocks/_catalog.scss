@@ -58,13 +58,13 @@
         margin-bottom: 20px;
         &__contents{
             display: none;
-            &__img{
+            &-img{
                 display: block;
                 max-width: 100%;
                 height: 200px;
                 margin: 0 auto;
             }
-            &__subtitle{
+            &-subtitle{
                 color: #0D0D0D;
                 text-align: center;
                 font-size: 16px;
@@ -73,7 +73,7 @@
                 line-height: normal;
                 margin: 15px 0;
             }
-            &__descrp{
+            &-descrp{
                 color: #0D0D0D;
                 text-align: center;
                 font-size: 14px;
@@ -81,7 +81,7 @@
                 font-weight: 300;
                 line-height: normal;
             }
-            &__link{
+            &-link{
                 @include catalog_link;
             }
             &_active{
@@ -118,7 +118,7 @@
             &_active{
                 display: block;
             }
-            &__list{
+            &-list{
                 position: relative;
                 padding-left: 10px;
                 margin-bottom: 61px;
@@ -143,7 +143,7 @@
                     }
                 }
             }
-            &__link{
+            &-link{
                 @include catalog_link;
             }
         }

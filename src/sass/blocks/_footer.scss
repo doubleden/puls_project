@@ -1,10 +1,10 @@
 .footer {
     height: 630px;
     position: relative;
-    &__map_big {
+    &__map-big {
         z-index: 1;
     }
-    &__map_small {
+    &__map-small {
         display: none;
     }
     &__info {
