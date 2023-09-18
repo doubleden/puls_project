@@ -1,8 +1,8 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
         speed: 500,
-        prevArrow: '<button type="button" class="slick-prev"><img src="img/icons/arrow_left.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="img/icons/arrow_right.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.png"></button>',
         responsive:[
             {
                 breakpoint: 996,
@@ -111,4 +111,14 @@ $(document).ready(function(){
         });
         return false;
      });
+
+     $(window).scroll(function(){
+        if($(this).scrollTop() > 1600){
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+     });
+
+     new WOW().init();
   });

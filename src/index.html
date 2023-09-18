@@ -9,10 +9,11 @@
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="container">
             <header>
                 <div class="header">
@@ -69,7 +70,7 @@
                     </div>
                 </div>
                 <div class="advantages__item">
-                    <img src="icons/heart.png" alt="heart">
+                    <img src="icons/heart.png" alt="heart" class="heartbeat">
                     <div class="advantages__titles">
                         Заботимся о здоровье
                     </div>
@@ -408,7 +409,7 @@
     <section class="reviews">
         <div class="container">
             <h2 class="title reviews__title">отзывы клиентов</h2>
-            <div class="reviews-block">
+            <div class="reviews-block animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="0.2s">
                 <img src="img/reviews/1.png" alt="1">
                 <div class="reviews-block__text">
                     <div class="reviews-block__text-name">Ирина Иванченко</div>
@@ -417,7 +418,7 @@
                     <div class="reviews-block__text-descrp">Не знала, что себе купить - обратилась к ребятам из RunSmart - подобрали пульсометр, который подошёл именно под мои цели и финансовые возможности.<br>Через некоторое время решила обновить гаджет - не раздумывая обратилась туда же.<br><br>Новые цели - новый гаджет!<br><br>Спасибо, RunSmart! </div>
                 </div>
             </div>
-            <div class="reviews-block">
+            <div class="reviews-block animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="0.2s">
                 <img src="img/reviews/2.png" alt="2">
                 <div class="reviews-block__text">
                     <div class="reviews-block__text-name">Иван Сёмочкин</div>
@@ -426,7 +427,7 @@
                     <div class="reviews-block__text-descrp">Крутая штука-пульсометр. Обычно без них бегал. Оказывается только хуже себе делал.<br>Купил пульсометр, ещё в подарок получил тренировку. Со мной вместе провели первую тренировку, научили пользоваться новым гаджетом. Также объяснили основы анатомии, составили план тренировок на месяц вперёд.<br><br>С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
                 </div>
             </div>
-            <div class="reviews-block">
+            <div class="reviews-block animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay="0.2s">
                 <img src="img/reviews/3.png" alt="3">
                 <div class="reviews-block__text">
                     <div class="reviews-block__text-name">Юлия Дашкина</div>
@@ -488,11 +489,16 @@
         </div>
     </div>
 
+    <a href="#up" class="pageup">
+        <img src="icons/arrow-up.svg" alt="arrow-up">
+    </a>
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.maskedinput.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
