@@ -34,8 +34,8 @@ $(document).ready(function(){
         });
     };
 
-    toggleSlide('.catalog-item__contents__link');
-    toggleSlide('.catalog-item__lists__link');
+    toggleSlide('.catalog-item__contents-link');
+    toggleSlide('.catalog-item__lists-link');
 
     // Modal
 
@@ -112,13 +112,14 @@ $(document).ready(function(){
         return false;
      });
 
-     $(window).scroll(function(){
+
+    $(window).scroll(function(){
         if($(this).scrollTop() > 1600){
             $('.pageup').fadeIn();
         } else {
             $('.pageup').fadeOut();
         }
-     });
+    });
 
      new WOW().init();
   });

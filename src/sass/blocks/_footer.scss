@@ -1,11 +1,18 @@
 .footer {
     height: 630px;
     position: relative;
+    background-color: #fff;
     &__map-big {
         z-index: 1;
+        iframe {
+            width: 100%;
+        }
     }
     &__map-small {
         display: none;
+        iframe {
+            width: 100%;
+        }
     }
     &__info {
         position: absolute;
